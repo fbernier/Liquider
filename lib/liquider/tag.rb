@@ -1,4 +1,4 @@
-class Liquider::Tag
+class Liquider::Tag < Struct.new(:markup, :document)
   attr_reader :markup, :document
 
   def initialize(markup, document)
